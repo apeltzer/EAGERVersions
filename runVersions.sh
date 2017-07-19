@@ -12,12 +12,10 @@ dedup -h | grep "DeDup v."
 fastqc -version
 preseq -version
 vcf2genome
-bwa
-mapDamage
-fastx_toolkit
+bwa 2>&1 | grep -e "Version" -e "Program:"
+mapDamage --version
 R --version
 ReportTable
-bowtie2 --version
-picard --version
+bowtie2 --version|grep -e "version"
 angsd 
 schmutzi 
