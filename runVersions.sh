@@ -15,11 +15,11 @@ ClipAndMerge 2>&1 | grep -e "ClipAndMerge (v."
 echo "FastQC Version:"
 fastqc -version
 echo "Preseq Version:"
-preseq -version
+preseq -version 2>&1| grep -e "Version: "
 echo "VCF2Genome Version:"
 vcf2genome 2>&1 | grep -e "(v. "
 echo "BWA Version:"
-bwa 2>&1 | grep -e "Version" -e "Program:"
+bwa 2>&1 | grep -e "Version"
 echo "mapDamage Version: "
 mapDamage --version
 echo "GNU R Version:"
