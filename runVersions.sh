@@ -13,7 +13,7 @@ fastqc -version
 preseq -version
 vcf2genome 2>&1 | grep -e "(v. "
 bwa 2>&1 | grep -e "Version" -e "Program:"
-mapDamage --version
+echo "mapDamage: " mapDamage --version
 R --version | grep "R version"
 ReportTable
 bowtie2 --version|grep -e "version"
