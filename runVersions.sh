@@ -14,7 +14,7 @@ preseq -version
 vcf2genome 2>&1 | grep -e "(v. "
 bwa 2>&1 | grep -e "Version" -e "Program:"
 mapDamage --version
-R --version
+R --version | grep "R version"
 ReportTable
 bowtie2 --version|grep -e "version"
 angsd | grep -e "version:" -m 1
