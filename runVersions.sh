@@ -12,7 +12,9 @@ dedup -h | grep "DeDup v."
 AdapterRemoval --version
 echo "ClipAndMerge Version:"
 ClipAndMerge 2>&1 | grep -e "ClipAndMerge (v."
-echo "FastQC Version:"
+echo "CircularMapper Version:"
+realignsamfile -h | grep -e "usage" 
+echo "FastQC version:"
 fastqc -version
 echo "Preseq Version:"
 preseq -version 2>&1| grep -e "Version: "
@@ -26,6 +28,6 @@ echo "GNU R Version:"
 R --version | grep "R version"
 #ReportTable needs fix
 echo "Bowtie2 Version:"
-bowtie2 --version|grep -e "version"
+bowtie2 --version|grep -e "s version"
 echo "ANGSD Version:"
 angsd  2>&1| grep -e "version:" -m 1
