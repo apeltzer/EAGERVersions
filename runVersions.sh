@@ -8,6 +8,16 @@
 gatk --version
 java -version
 dedup -h | grep "DeDup v."
-clipmerge=$(ClipAndMerge)
-echo $clipmerge | cut -c1-10
-
+#ClipAndmerge output is in logfile
+fastqc -version
+preseq -version
+vcf2genome
+bwa
+mapDamage
+fastx_toolkit
+R --version
+ReportTable
+bowtie2 --version
+picard --version
+angsd 
+schmutzi 
