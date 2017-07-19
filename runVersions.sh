@@ -8,14 +8,13 @@
 gatk --version
 java -version
 dedup -h | grep "DeDup v."
-#ClipAndmerge output is in logfile
+ClipAndMerge 2>&1 | grep -e "ClipAndMerge (v."
 fastqc -version
 preseq -version
-vcf2genome
+vcf2genome 2>&1 | grep -e "(v. "
 bwa 2>&1 | grep -e "Version" -e "Program:"
 mapDamage --version
 R --version
 ReportTable
 bowtie2 --version|grep -e "version"
-angsd 
-schmutzi 
+angsd | grep -e "version:" -m 1
