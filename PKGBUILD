@@ -3,7 +3,7 @@
 
 pkgname=eagerversions
 pkgver=1.92
-pkgrel=1
+pkgrel=2
 pkgdesc="A small tool to generate versions of utilized tools for the logfile."
 arch=('any')
 url="http://it.inf.uni-tuebingen.de/?page_id=161"

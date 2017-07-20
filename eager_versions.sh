@@ -5,7 +5,7 @@
 #Getting them systemwide without archlinux support
 #EAGER-GUI and CLI already do that with the logfile anyways
 echo "GATK Version:" >> $1
-gatk --version 2>&1 | grep "-" >> $1 
+gatk --version 2>&1 | grep -v "JAVA" >> $1 
 echo "Java Version:" >> $1 
 java -version 2>&1 | grep "version" >> $1
 echo "DeDup Version:" >> $1
