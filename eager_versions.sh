@@ -28,7 +28,8 @@ echo "mapDamage Version: " >> $1
 mapDamage --version 2>&1 >> $1
 echo "GNU R Version:" >> $1
 R --version | grep "R version" 2>&1 >> $1
-#ReportTable needs fix
+echo "ReportTable Version:" >> $1
+ReportTable 2>&1|grep "version" >> $1
 echo "Bowtie2 Version:" >> $1
 bowtie2 --version|grep -e "s version" 2>&1  >> $1
 echo "ANGSD Version:" >> $1
